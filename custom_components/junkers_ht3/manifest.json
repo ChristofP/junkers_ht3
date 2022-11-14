@@ -1,0 +1,11 @@
+{
+  "codeowners": ["@CPairon"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://gitlab.com/CPairon/junkers_ht3",
+  "domain": "junkers_ht3",
+  "iot_class": "local_polling",
+  "name": "Junkers Heatronic 3",
+  "requirements": [],
+  "version": "1.0.0"
+}
