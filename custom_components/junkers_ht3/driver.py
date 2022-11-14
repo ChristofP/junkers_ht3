@@ -313,7 +313,7 @@ class Ht3Driver(threading.Thread):
     def stop(self):
         """Stop the interface connection"""
         self._stop = True
-        self._stop_thread.set()
+        # self._stop_thread.set()
 
         if self._socket is not None:
             with self._lock:  # Receive thread might use the socket
@@ -508,7 +508,7 @@ class Ht3Driver(threading.Thread):
         block = header + data
         self._write(block)
 
-        ##asyncio.sleep(1)
+        time.sleep(1)
 
         ## send 2. netcom-bytes to 'ht_pitiny' | 'ht_piduino' (ht_transceiver)
         #   header= 0x23,(len(data)+3),0x21,0x53,0x11
@@ -547,7 +547,7 @@ class Ht3Driver(threading.Thread):
         block = header + data
         self._write(block)
 
-        ##asyncio.sleep(1)
+        time.sleep(1)
 
         ## send 2. netcom-bytes to 'ht_pitiny' | 'ht_piduino' (ht_transceiver)
         #   header= 0x23,(len(data)+3),0x21,0x53,0x11
