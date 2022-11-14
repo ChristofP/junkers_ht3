@@ -1,0 +1,3 @@
+reconnect:
+  # Description of the service
+  description: Reconnect to HT3 proxy.
